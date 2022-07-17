@@ -1,0 +1,152 @@
+@import "../Sass/variables.scss";
+@import "../Sass/mixin.scss";
+
+.product-details {
+  p:first-child {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  h5 {
+    font-weight: 600;
+    padding: 0.3rem 0;
+  }
+  .desc {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    a {
+      text-decoration: underline !important;
+      color: $black;
+      font-weight: 500;
+    }
+  }
+  .product-colors {
+    img {
+      padding-left: 0px;
+    }
+    .colorone {
+      @include product-color(#3d84ff);
+    }
+
+    .colortwo {
+      @include product-color(#c21273);
+    }
+
+    .colorthree {
+      @include product-color(#172026);
+    }
+
+    .colorfour {
+      @include product-color(#b5b8ba);
+    }
+  }
+  .size {
+    padding-bottom: 1rem;
+    button {
+      border-radius: 5px;
+      width: 65px;
+      height: 35px;
+      margin-right: 10px;
+      background-color: $white;
+      border-color: #91959c;
+    }
+  }
+  .save a {
+    font-size: 1.3rem;
+    color: $black;
+    padding-left: 3rem;
+  }
+  .addtocart {
+    background-color: $blue;
+    padding: 8px 110px;
+    border-radius: 2rem;
+    color: $white;
+    border: none;
+    margin-bottom: 1rem;
+  }
+}
+.Producttitle h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-right: 41rem;
+}
+
+.Producttitle h5 {
+  padding: 1rem 0;
+}
+
+.Producttitle p {
+  padding-right: 2rem;
+}
+
+.Producttitle hr {
+  height: 0.6rem !important;
+  width: 11%;
+  background-color: #001eff;
+  margin-top: 2rem;
+  opacity: 3;
+}
+
+.details .detailsicon {
+  padding-top: 0px;
+}
+
+.small img {
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .pro-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product-details p:first-child {
+    display: none;
+}
+.product-details h1 {
+  padding-top: 3rem;
+}
+.Producttitle h1 {
+  font-size: 1.3rem;
+  padding-right: 0rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+.Producttitle h5 {
+  text-align: center;
+}
+.Producttitle hr {
+  width: 12%;
+  margin: 0px 21rem;
+  margin-top: 2rem;
+}
+}
+
+@media only screen and (max-width: 320px) {
+  .pro-img {
+    width: 90%;
+    height: 280px;
+}
+.product-details h1 {
+  font-size: 1.6rem;
+}
+.product-details .product-colors .cola {
+  margin-right: 4px;
+}
+.product-details .size button {
+  width: 53px;
+  height: 35px;
+  margin-right: 6px;
+}
+.product-details .addtocart {
+  font-size: .9rem;
+}
+.Producttitle hr {
+  width: 20%;
+  margin: 0px 8rem;
+  margin-top: 2rem;
+}
+}
